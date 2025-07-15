@@ -1,60 +1,67 @@
 <html>
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shivam's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Hey, I'm Shivam 👋</h1>
-    <p>Web Developer | Student | Always Learning</p>
-    <button id="themeToggle">Toggle Theme</button>
+    <div class="container">
+      <img src="shivam-ghibli.png" alt="Shivam as a developer" />
+      <div class="header-text">
+        <h1>Hey, I'm Shivam 👋</h1>
+        <p>Web Developer | Student | Always Learning</p>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+      </div>
+    </div>
   </header>
 
-  <section class="about">
-    <img src="shivam-ghibli.png" alt="Shivam's photo" />
-    <div>
+  <main class="container">
+    <section>
       <h2>About Me</h2>
-      <p>I'm currently exploring web development and building small projects hosted on GitHub Pages. I enjoy learning new things and creating clean, simple designs that work well.</p>
-    </div>
-  </section>
+      <p>
+        I'm currently exploring web development and working on small projects. This website is hosted using GitHub Pages. I love trying out new things and building simple, clean interfaces.
+      </p>
+    </section>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skill-tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Basic Java</span>
-      <span>Git & GitHub</span>
-      <span>UI/UX Basics</span>
-    </div>
-  </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Basic Java</li>
+        <li>Git & GitHub</li>
+        <li>UI/UX Basics</li>
+      </ul>
+    </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Simple Calculator</strong> – Built using HTML, CSS & JS</li>
-      <li><strong>Responsive Layout</strong> – Created with Flexbox</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Projects</h2>
+      <h3>Simple Calculator</h3>
+      <p>A calculator built using HTML, CSS, and JavaScript.</p>
 
-  <section class="experience">
-    <h2>My Experience</h2>
-    <p>During my internship at Dinar Ventures, I built real projects using HTML, CSS, and JavaScript. This experience boosted my confidence and helped me understand frontend development better. I'm thankful for the team and their guidance throughout my learning journey.</p>
-  </section>
+      <h3>Responsive Layout</h3>
+      <p>Used Flexbox to create a responsive web layout.</p>
+    </section>
+
+    <section>
+      <h2>My Experience</h2>
+      <p>
+        During my web development internship at Dinar Ventures, I had the opportunity to learn a lot in a short time. Their structured guidance helped me understand the basics of front-end development and build my confidence.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact Me</h2>
+      <p>Email: shivamgohel143v@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/shivamg-2410" target="_blank">github.com/shivamg-2410</a></p>
+    </section>
+  </main>
 
   <footer>
-    <h2>Contact Me</h2>
-    <p>
-      Email: <span id="emailText">shivamgohel143v@gmail.com</span>
-      <button id="copyEmailBtn">📋 Copy</button>
-    </p>
-    <p>
-      GitHub:
-      <a href="https://github.com/shivamg-2410" target="_blank">github.com/shivamg-2410</a>
-    </p>
+    <p>© 2025 Shivam Gohel | Built with 💻 & ☕</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
