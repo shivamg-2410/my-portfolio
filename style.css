@@ -1,17 +1,17 @@
 :root {
-  bg: #f9f9f9;
-  text: #111;
-  card-bg: #fff;
-  accent: #4caf50;
-  shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --bg: #f9f9f9;
+  --text: #111;
+  --card-bg: #fff;
+  --accent: #4caf50;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 body.dark {
-  bg: #1b1b1b;
-  text: #f1f1f1;
-  card-bg: #2b2b2b;
-  accent: #81c784;
-  shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --bg: #1b1b1b;
+  --text: #f1f1f1;
+  --card-bg: #2b2b2b;
+  --accent: #81c784;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 body {
