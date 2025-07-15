@@ -1,21 +1,7 @@
-const toggleBtn = document.getElementById('themeToggle');
+const toggleBtn = document.getElementById('theme-toggle');
+
 toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-});
-
-if (!localStorage.getItem('visited')) {
-  alert("👋 Welcome to my portfolio!");
-  localStorage.setItem('visited', 'yes');
-}
-
-const copyBtn = document.getElementById('copyEmailBtn');
-const emailText = document.getElementById('emailText');
-
-copyBtn.addEventListener('click', () => {
-  navigator.clipboard.writeText(emailText.textContent).then(() => {
-    copyBtn.textContent = "✅ Copied!";
-    setTimeout(() => {
-      copyBtn.textContent = "📋 Copy";
-    }, 1500);
-  });
+  document.documentElement.toggleAttribute('data-theme');
+  toggleBtn.textContent =
+    document.documentElement.hasAttribute('data-theme') ? '☀️ Light Mode' : '🌙 Dark Mode';
 });
